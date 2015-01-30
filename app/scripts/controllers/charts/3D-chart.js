@@ -32,7 +32,6 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 	$scope.alphaIncrease = function () {
 		if (angleAlpha < 35)
 			angleAlpha = angleAlpha + 10;
-			console.log(angleAlpha);
 			$scope.highcharts3D.options.chart.options3d.alpha = angleAlpha;
 	};
 
@@ -40,7 +39,6 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 	$scope.alphaDecrease = function () {
 		if (angleAlpha > -15)
 			angleAlpha = angleAlpha - 10;
-			console.log(angleAlpha);
 			$scope.highcharts3D.options.chart.options3d.alpha = angleAlpha;
 	};
 
@@ -48,7 +46,6 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 	$scope.betaIncrease = function () {
 		if (angleBeta < 45)
 			angleBeta = angleBeta + 10;
-			console.log(angleBeta);
 			$scope.highcharts3D.options.chart.options3d.beta = angleBeta;
 	};
 
@@ -56,7 +53,6 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 	$scope.betaDecrease = function () {
 		if (angleBeta > -5)
 			angleBeta = angleBeta - 10;
-			console.log(angleBeta);
 			$scope.highcharts3D.options.chart.options3d.beta = angleBeta;
 	};
 
@@ -79,7 +75,6 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 
         // Add random category
        	$scope.highcharts3D.xAxis.categories.push('Random ctg.');
-       	console.log($scope.highcharts3D);
 
     };
 
