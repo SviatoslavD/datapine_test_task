@@ -38,8 +38,7 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 
 	// Zoom out view distance
 	$scope.alphaDecrease = function () {
-		var x = 15 * (-1);
-		if (angleAlpha > x)
+		if (angleAlpha > -15)
 			angleAlpha = angleAlpha - 10;
 			console.log(angleAlpha);
 			$scope.highcharts3D.options.chart.options3d.alpha = angleAlpha;
@@ -55,8 +54,7 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 
 	// Zoom out view distance
 	$scope.betaDecrease = function () {
-		var y = 5 * (-1);
-		if (angleBeta > y)
+		if (angleBeta > -5)
 			angleBeta = angleBeta - 10;
 			console.log(angleBeta);
 			$scope.highcharts3D.options.chart.options3d.beta = angleBeta;
