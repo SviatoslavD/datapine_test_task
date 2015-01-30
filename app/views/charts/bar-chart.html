@@ -1,0 +1,10 @@
+
+<!-- Bar chart -->
+
+<div class="charts-view">
+    <input placeholder="Chart name" type="text" ng-model="highchartsBar.title.text"> 
+    <button class="button-main" ng-click="addSeries()">Add Random Series</button>
+    <button class="button-main" ng-click="removeRandomSeries()">Remove Random Series</button>
+    <button class="button-main" ng-click="swapChartType()">Line/Bar</button>
+    <highchart id="chart1" config="highchartsBar"></highchart>
+</div>

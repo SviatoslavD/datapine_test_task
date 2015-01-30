@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto; }
+
+/* ========= NAV BAR ========= */
+.nav {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0 0; }
+  .nav a {
+    float: right;
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+    border-left: 1px solid #ccc; }
+  .nav a:hover {
+    color: #c00;
+    background-color: #fff; }
+
+.header {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #069; }
+
+/* ========= HOME-CHARTS ========= */
+.container {
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.charts-view {
+  width: 80%;
+  margin: 0 auto; }
+
+.charts-demo ul li {
+  list-style-type: none;
+  width: 50%;
+  height: 340px;
+  float: left;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+  .charts-demo ul li h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .charts-demo ul li h3 {
+    text-align: center;
+    font-weight: bold; }
+  .charts-demo ul li img {
+    -webkit-transition: width, height;
+    -moz-transition: width, height;
+    -ms-transition: width, height;
+    transition: width, height; }
+  .charts-demo ul li img:hover {
+    width: 420px;
+    height: 260px; }
+
+/* ========= FOOTER ========= */
+.footer {
+  color: #777;
+  border-top: 1px solid #ccc; }
+  .footer p {
+    margin-top: 10px; }
+
+/* ========= ABOUT PAGE ========= */
+.about {
+  font-size: 20px;
+  color: #003366;
+  line-height: 120%;
+  margin-bottom: 40px; }
+
+/* ========= COSMETIC STYLES ========= */
+.button-main,
+.button-zoom {
+  height: 30px;
+  border-radius: 4px; }
+
+.button-zoom {
+  width: 30px;
+  margin: 0 auto; }
+
+.plus-minus {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 auto; }
+
+input {
+  height: 25px;
+  border-radius: 4px; }
+
+.button-header-pie {
+  margin: 0 auto;
+  font-weight: bold;
+  float: left;
+  padding-top: 6px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px; }
+
+.type-swap-button {
+  float: left; }
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+/* ========= @media ========= */
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100%; }
+
+  ul li {
+    width: 100%; }
+
+  .charts-view {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

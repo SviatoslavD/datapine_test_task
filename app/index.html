@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+  </head>
+
+  <body ng-app="datapineTestTaskApp">
+    <div class="wrapper">
+      <h1 class="header">Datapine Test Task</h1>
+      <div class="nav">  
+          <a ui-sref="about">About</a>  
+          <a ui-sref="home">Home</a>
+      </div>
+      <!-- Charts view tag -->
+      <div class="container clearfix" ui-view></div>
+        <div class="footer">
+          <p>by Sviatoslav Denykevych</p>
+          <p>N-iX</p>
+        </div>
+    </div> 
+
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/highcharts-release/highcharts.js"></script>
+    <script src="bower_components/highcharts-release/highcharts-3d.js"></script>
+    <script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+    <!-- endbower -->
+
+    <!-- gulpfile -->
+    <script src="app.js"></script>
+    <!-- endgulp -->
+
+</body>
+</html>

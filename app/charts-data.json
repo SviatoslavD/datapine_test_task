@@ -1,0 +1,190 @@
+{	
+	"pieChart": {
+		"options": {
+			"chart": {
+				"type": "pie",
+				"plotBackgroundColor": null,
+            	"plotBorderWidth": null,
+           		"plotShadow": false,
+           		"with": 500,
+           		"height": 500
+			},
+			"tooltip": {
+            	"pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>"
+        	},
+        	"plotOptions": {
+	            "pie": {
+	                "allowPointSelect": true,
+	                "cursor": "pointer",
+	                "dataLabels": {
+	                    "enabled": true,
+	                    "format": "<b>{point.name}</b>: {point.percentage:.1f} %"
+	                },
+	                "showInLegend": false
+	            }
+	        }
+		},
+		"title": {
+			"text": "Major development languages 2014 in Ukraine"
+		},
+		"series": [{
+			"innerSize": "0%",
+			"data":  [{
+				"name": "Java",
+				"y": 21
+			}, {
+				"name": "C#",
+				"y": 18
+			}, {
+				"name": "PHP",
+				"y": 16
+			}, {
+				"name": "C++",
+				"y": 13
+			}, {
+				"name": "JavaScript",
+				"y": 12,
+				"sliced": true,
+				"selected": true
+			}, {
+				"name": "Python",
+				"y": 11
+			}, {
+				"name": "Ruby",
+				"y": 9
+			}]
+		}],
+		"loading": false
+	},
+	"barChart": {	
+		"options": {
+		    "chart": {
+		        "type": "bar",
+		        "with": 500,
+           		"height": 500
+		    }
+		},
+		"title": {
+		    "text": "Bar chart"
+		},
+		"series": [{
+			"data": [{
+				"name": "Point 1",
+				"y": 7
+			}, {
+				"name": "Point 2",
+				 "y": 10
+			}, {
+				"name": "Point 3",
+				"y": 16
+			}, {
+				"name": "Point 4",
+				"y": 3
+			}, {
+				"name": "Point 5",
+				"y": 5
+			}, {
+				"name": "Point 6",
+				"y": 12
+			}]
+		}],
+		"loading": false
+	},
+	"chart3D": {
+		"options": {
+			"chart": {
+				"type": "column",
+            	"options3d": {
+	                "enabled": true,
+	                "alpha": 15,
+	                "beta": 15,
+	                "viewDistance": 25,
+	                "depth": 40
+            	},
+           		"marginTop": 80,
+            	"marginRight": 40
+			},
+			"tooltip": {
+            	"headerFormat": "<b>{point.key}</b><br>",
+            	"pointFormat": "<span style='color:{series.color}'>\u25CF</span> {series.name}: {point.y} / {point.stackTotal}"
+        	},
+        	"plotOptions": {
+	            "column": {
+                	"stacking": "normal",
+                	"depth": 40
+            	}
+	        }
+		},
+		"title": {
+			"text": "Title"
+		},
+		"xAxis": {
+            "categories": ["AngularJS", "Node.js", "jQuery", "Backbone.js"]
+        },
+        "yAxis": {
+            "allowDecimals": false,
+            "min": 0,
+            "title": {
+                "text": "Number of developers"
+            }
+        },
+		"series": [{
+			"name": "Team 1",
+			"data": [2,5,8,11],
+			"stack": "Project 1"
+		}, {
+			"name": "Team 2",
+			"data": [3,1,8,5],
+			"stack": "Project 1"
+		}, {
+			"name": "Team 3",
+			"data": [8,7,13,14],
+			"stack": "Project 2"
+		}, {
+			"name": "Team 4",
+			"data": [15,4,4,7],
+			"stack": "Project 2"
+		}]
+	},
+	"areaChart": {
+		"options": {
+			"chart": {
+				"type": "area"
+			},
+			"tooltip": {
+            	"pointFormat": "{series.name} random value y: <b>{point.y:,.0f}</b><br/>, and automatically calculated x: <b>{point.x}</b>"
+            },
+	        "plotOptions": {
+	            "area": {
+	                "pointStart": 0,
+	                "marker": {
+	                    "enabled": false,
+	                    "symbol": "circle",
+	                    "radius": 2,
+	                    "states": {
+	                        "hover": {
+	                            "enabled": true
+	                        }
+	                    }
+	                }
+	            }
+	        }
+		},
+		"title": {
+			"text": "Random area chart"
+		},
+         "xAxis": {
+            "allowDecimals": false
+        },
+        "yAxis": {
+            "title": {
+                "text": "Random values"
+            }
+        },
+		"series": [{
+            "name": "Series 1"
+        }, {
+            "name": "Series 2"
+        }]
+	}
+}
