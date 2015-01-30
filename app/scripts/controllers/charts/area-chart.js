@@ -10,7 +10,7 @@ angular.module('datapineTestTaskApp').controller('AreaChartCtrl', function ($sco
 	// Read Area chart data from JSON
 	$http.get('charts-data.json')
 	.success(function (data) {
-		createAreaChart(data.areaChart);
+		createAreaChart (data.areaChart);
 	})
 	.error(function (data) {
 		console.log('Request failed:' + data);
@@ -18,14 +18,14 @@ angular.module('datapineTestTaskApp').controller('AreaChartCtrl', function ($sco
 
 	// Create Area chart
 	function createAreaChart (chartData) {
+
 		$scope.highchartsArea = chartData;
-		console.log($scope.highchartsArea);
 		// For storing random data value
 		var rnd = [];  
 
 		// Generate random "data" values for the two "Series" 
 		for (var k = 0; k < 2; k++) {
-			for (var i = 0; i < 70; i++) {
+			for (var i = 0; i < 35; i++) {
 				rnd.push(Math.floor(Math.random() * 1000) + 1);
 			};
 
@@ -92,6 +92,23 @@ angular.module('datapineTestTaskApp').controller('AreaChartCtrl', function ($sco
             	}
 			};			
 		}
+	};
+
+	// Add random series
+	$scope.addSeries = function () {
+		// For storing random data value
+		var rnd = [];  
+		// Generate random "data" values for the two "Series" 
+			for (var i = 0; i < 35; i++) {
+				rnd.push(Math.floor(Math.random() * 1000) + 1);
+			};
+
+			// Add random "data" to k-"Series"
+			$scope.highchartsArea.series.push({
+				name: 'Random series',
+				data: rnd
+			});
+
 	};
 
 });

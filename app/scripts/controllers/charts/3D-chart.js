@@ -30,30 +30,59 @@ angular.module('datapineTestTaskApp').controller('chart3dCtrl', function ($scope
 
 	// Zoom in view distance
 	$scope.alphaIncrease = function () {
-		angleAlpha = angleAlpha + 10;
-		console.log(angleAlpha);
-		$scope.highcharts3D.options.chart.options3d.alpha = angleAlpha;
+		if (angleAlpha < 35)
+			angleAlpha = angleAlpha + 10;
+			console.log(angleAlpha);
+			$scope.highcharts3D.options.chart.options3d.alpha = angleAlpha;
 	};
 
 	// Zoom out view distance
 	$scope.alphaDecrease = function () {
-		angleAlpha = angleAlpha - 10;
-		console.log(angleAlpha);
-		$scope.highcharts3D.options.chart.options3d.alpha = angleAlpha;
+		var x = 15 * (-1);
+		if (angleAlpha > x)
+			angleAlpha = angleAlpha - 10;
+			console.log(angleAlpha);
+			$scope.highcharts3D.options.chart.options3d.alpha = angleAlpha;
 	};
 
 	// Zoom in view distance
 	$scope.betaIncrease = function () {
-		angleBeta = angleBeta + 10;
-		console.log(angleBeta);
-		$scope.highcharts3D.options.chart.options3d.beta = angleBeta;
+		if (angleBeta < 45)
+			angleBeta = angleBeta + 10;
+			console.log(angleBeta);
+			$scope.highcharts3D.options.chart.options3d.beta = angleBeta;
 	};
 
 	// Zoom out view distance
 	$scope.betaDecrease = function () {
-		angleBeta = angleBeta - 10;
-		console.log(angleBeta);
-		$scope.highcharts3D.options.chart.options3d.beta = angleBeta;
+		var y = 5 * (-1);
+		if (angleBeta > y)
+			angleBeta = angleBeta - 10;
+			console.log(angleBeta);
+			$scope.highcharts3D.options.chart.options3d.beta = angleBeta;
 	};
+
+	// Add random Series
+    $scope.addSeries = function () {
+    	// For storing def. Data values
+    	var data = [];
+        //Create random Data values   
+        for (var i = 0; i < 4; i++) {
+            data.push(Math.floor(Math.random() * 20) + 1);
+        };
+
+		var rnd = {
+			name: 'Random team',
+			data: data,
+			stack: 'Random project'
+		};
+        // Add data with random Series to chart
+        $scope.highcharts3D.series.push(rnd);
+
+        // Add random category
+       	$scope.highcharts3D.xAxis.categories.push('Random ctg.');
+       	console.log($scope.highcharts3D);
+
+    };
 
 });

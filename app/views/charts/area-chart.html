@@ -1,7 +1,13 @@
 
 <!-- Area chart view -->
 <div class="charts-view">
-	<p class="button-header-pie">Type:</p>
-	<button class="button-main" ng-click="swapChartType()">Area/3D column</button>
+	<div class="type-swap-button">
+		<p class="button-header-pie">Type:</p>
+		<button class="button-main" ng-click="swapChartType()">Area/3D column</button>
+	</div>
+	<div>
+		<p class="button-header-pie">Series:</p>
+		<button class="button-main" ng-click="addSeries()">Add</button>
+	</div>
 	<highchart id="chart4" config="highchartsArea"></highchart>
 </div>

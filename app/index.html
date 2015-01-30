@@ -13,9 +13,11 @@
   <body ng-app="datapineTestTaskApp">
     <div class="wrapper">
       <h1 class="header">Datapine Test Task</h1>
-      <div class="nav">  
-          <a ui-sref="about">About</a>  
-          <a ui-sref="home">Home</a>
+      <div class="nav">
+        <ul>
+          <li><a ui-sref="home">Home</a></li>  
+          <li><a ui-sref="about">About</a></li>
+        </ul> 
       </div>
       <!-- Charts view tag -->
       <div class="container clearfix" ui-view></div>

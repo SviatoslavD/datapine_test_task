@@ -4,19 +4,25 @@
 	<div class="type-swap-button">
 		<p class="button-header-pie"> Alpha angle: </p>
 		<button class="button-zoom" ng-click="alphaIncrease()">
-			<p class="plus-minus">+</p>
+			+
 		</button>
 		<button class="button-zoom" ng-click="alphaDecrease()">
-			<p class="plus-minus">-</p>
+			-
+		</button>
+	</div>
+	<div class="type-swap-button">
+		<p class="button-header-pie">Beta angle:</p>
+		<button class="button-zoom" ng-click="betaIncrease()">
+			+
+		</button>
+		<button class="button-zoom" ng-click="betaDecrease()">
+			-
 		</button>
 	</div>
 	<div>
-		<p class="button-header-pie">Beta angle:</p>
-		<button class="button-zoom" ng-click="betaIncrease()">
-			<p class="plus-minus">+</p>
-		</button>
-		<button class="button-zoom" ng-click="betaDecrease()">
-			<p class="plus-minus">-</p>
+		<p class="button-header-pie">Series:</p>
+		<button class="button-zoom" ng-click="addSeries()">
+			Add
 		</button>
 	</div>
 	<highchart id="chart3" config="highcharts3D"></highchart>
