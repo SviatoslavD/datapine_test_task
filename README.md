@@ -1,5 +1,3 @@
-# datapine_test_task
-Datapine frontend test
 
 To get it running, you need:
 - Install yeoman or simply just bower and grunt.
